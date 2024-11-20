@@ -1,0 +1,4 @@
+# Deploy an ARM template
+az deployment group create \
+--resource-group myazure900teststorage \
+--template-file main.json \

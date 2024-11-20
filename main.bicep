@@ -1,7 +1,6 @@
 @minLength(3)
 @maxLength(24)
 param storageAccountName string = 'store${uniqueString(resourceGroup().id)}'
-param location string = resourceGroup().location
 
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2024-03-01' = {
   name: 'exampleVNet'
